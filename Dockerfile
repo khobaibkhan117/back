@@ -14,6 +14,7 @@ RUN pip install python-dotenv
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
+COPY .env /app/backend/.env  # Copy .env file
 
 EXPOSE 8000
 
